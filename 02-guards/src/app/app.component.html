@@ -1,0 +1,21 @@
+<p>Normal routes</p>
+<button routerLink="/home">Home</button>
+<button routerLink="/about">About</button>
+<button routerLink="/access-denied">Access Denied</button>
+
+<p>Wont even be fetched if not authorized</p>
+<button routerLink="/lazy">Lazy Module</button>
+
+<p>Simple CanActivate Guard</p>
+<button routerLink="/admin">Admin</button>
+
+<p>Activate child components only if role is met</p>
+<button routerLink="/about/edit">Edit About</button>
+
+<p>Wont go back or to another link if not confirmed</p>
+<button routerLink="/contact">Contact</button>
+
+<p>Resolve guard - showing page once all data has been fetched</p>
+<button routerLink="/products">Products</button>
+
+<router-outlet></router-outlet>
