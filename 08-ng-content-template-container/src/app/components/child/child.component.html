@@ -1,0 +1,22 @@
+<div class="title">Child component</div>
+<ng-content select="[channelName]"></ng-content>
+<ng-content select=".description"></ng-content>
+
+<hr />
+
+<div *ngFor="let number of numbers">
+  <ng-container *ngIf="number % 2 == 0">
+    {{ number }}
+  </ng-container>
+</div>
+
+<hr />
+
+<ng-template [ngIf]="true">This is content inside ng-template</ng-template>
+
+<hr />
+
+<div *ngIf="true; else elseBlock">Condition is true</div>
+<ng-template #elseBlock>
+  <div>Condition is false</div>
+</ng-template>
